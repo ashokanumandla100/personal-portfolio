@@ -1,7 +1,7 @@
-const navLinks = document.querySelectorAll('nav a');
+const navLinks = document.querySelectorAll('nav ul li a');
 
 
-addRemoveActiveClass = (event) => {
+const addRemoveActiveClass = (event) => {
     navLinks.forEach(link => {
         link.classList.remove('active');
     })

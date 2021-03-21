@@ -1,0 +1,130 @@
+:root {
+    --clr-navbar-primary: #FFFFFF;
+    --clr-navbar-secondary: rgba(100,149,237);
+    --clr-navbar-gradient-from: rgba(18, 70, 112, 0.719);
+    --clr-navbar-gradient-to: rgba(62, 117, 163, 0.507);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 100px;
+    min-width: 1200px;
+    padding: 5px 15px 5px 15px;
+    color: var(--clr-navbar-primary);
+    background-image: linear-gradient(to right, var(--clr-navbar-gradient-from), var(--clr-navbar-gradient-to));
+}
+
+.brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:var(--clr-navbar-secondary);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        opacity: 0.8; 
+    
+        &:hover, &:focus {
+            cursor: pointer;
+            transform-origin: bottom;
+            animation: 2s pendulam infinite linear;
+        }
+    }
+
+    .brand-name {
+        font-weight: 800;
+    }
+}
+
+.navigation-wrapper {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;   
+
+    .nav-links {
+        display: flex;
+        gap: 50px;   
+    }
+    
+    img {
+        border-radius: 50%;
+        border: 1px solid var(--clr-navbar-primary);
+        padding: 3px;
+    
+        &:hover, &:focus {
+            cursor: pointer;
+            padding: 5px;
+            transform-origin: bottom;
+            animation: 2s pendulam infinite linear;
+        }
+    }
+
+    nav a {
+        padding: 5px 10px;
+        &:hover, &.active {
+            border-radius: 5px;
+            background-color: var(--clr-navbar-primary);
+            color: var(--clr-navbar-secondary);
+            font-weight: 500;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+
+a, a:visited {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 200;
+    cursor: pointer;
+    color: var(--clr-navbar-primary);
+}
+
+
+
+
+@keyframes pendulam {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }    
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
