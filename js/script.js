@@ -27,4 +27,5 @@ topItem.addEventListener('click', function() {
         link.classList.remove('active');
     });
     exp.classList.add('active');
+    window.scrollTo(0, 0);
 });

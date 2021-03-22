@@ -167,6 +167,57 @@ section:target::before {
     margin-top: -120px;
 }
 
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+    .skill-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+        .skill-group-header {
+            font-weight: 600;
+            background: rgba(61, 117, 168, 0.651);
+            padding: 5px 15px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .skill-item-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            width: 100%;
+            justify-content: center;
+
+            .skill-item {
+                display: flex;
+                padding: 5px 10px;
+                color: white;
+                align-items: center;
+                background: rgba(86, 157, 160, 0.74);
+                padding: 5px 10px;
+                border-radius: 5px;                
+                justify-content: space-between;
+
+                i {
+                    text-shadow: 2px 2px 1px black;
+                }
+
+                .rating {
+                    font-size: 0.7rem;
+                    color: rgba(255, 217, 0, 0.931);
+                }
+            }
+        }
+    }
+}
 
 
 @keyframes pendulam {
