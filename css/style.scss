@@ -19,6 +19,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .header-wrapper {
@@ -350,6 +351,109 @@ section:target::before {
 
         }
     }
+}
+
+
+
+.cert-content {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    
+    .slide {
+        display: none;
+    }
+    
+    .slide.active {
+        display: block;
+    }
+
+    .cert-item {
+        background-color: rgba(86, 157, 160, 0.74);
+        border-radius: 5px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        color: var(--clr-navbar-primary);
+        box-shadow: 5px -5px 2px rgba(0, 0, 0, 0.1);
+        
+
+        .cert-item-header {
+            align-self: center;
+            background: rgba(61, 117, 168, 0.651);
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px 5px 0px 0px;
+            font-weight: 600;
+            font-family: monospace;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .cert-item-content {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+            padding: 10px 40px;
+
+            .cert-logo-from {
+                display: flex;
+                gap: 20px;
+
+                .cert-from {
+                    align-self: center;
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
+
+            }
+
+            .cert-item-footer {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.8rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+        }
+
+    }
+
+    .prev-container, .next-container {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        a {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+
+    .prev-container {
+        left: 15px;
+    }
+
+    .next-container {
+        right: 15px;
+    }
+
 }
 
 
