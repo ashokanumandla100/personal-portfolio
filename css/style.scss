@@ -358,8 +358,11 @@ section:target::before {
 .cert-content {
     padding: 10px;
     position: relative;
-    width: 100%;
+    width: 90%;
     z-index: 5;
+    height: 350px;
+    margin-bottom: 50px;
+    
     
     .slide {
         display: none;
@@ -367,10 +370,12 @@ section:target::before {
     
     .slide.active {
         display: block;
+        animation: 1s corouselAnimation ease-in-out;
     }
 
     .cert-item {
         background-color: rgba(86, 157, 160, 0.74);
+        height: 300px;
         border-radius: 5px;
         gap: 5px;
         display: flex;
@@ -390,22 +395,31 @@ section:target::before {
             font-family: monospace;
             font-size: 1.5rem;
             text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+            .right {
+                float: right;
+                padding-right: 20px;
+            }
         }
 
         .cert-item-content {
             display: flex;
             gap: 30px;
             flex-direction: column;
-            padding: 10px 40px;
+            padding: 50px 100px;
 
             .cert-logo-from {
                 display: flex;
                 gap: 20px;
+                align-items: center;
 
                 .cert-from {
-                    align-self: center;
-                    font-size: 1.25rem;
+                    font-size: 1.1rem;
                     font-weight: 500;
+
+                    small {
+                        color: rgba(0, 0, 0, 0.5);
+                    }
                 }
 
             }
@@ -413,7 +427,8 @@ section:target::before {
             .cert-item-footer {
                 display: flex;
                 justify-content: space-between;
-                font-size: 0.8rem;
+                font-size: 0.85rem;
+                padding: 20px 10px 10px 10px;
                 font-family: Georgia, 'Times New Roman', Times, serif;
             }
 
@@ -422,36 +437,36 @@ section:target::before {
                 height: 60px;
             }
 
+            img.hopkins {
+                fill: red;
+            }
+
         }
 
     }
 
     .prev-container, .next-container {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.2);
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: bold;
         position: absolute;
         top: 50%;
+        cursor: pointer;
         transform: translateY(-50%);
         
-        a {
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-        }
     }
 
     .prev-container {
-        left: 15px;
+        left: 25px;
     }
 
     .next-container {
-        right: 15px;
+        right: 25px;
     }
 
 }
@@ -472,6 +487,27 @@ section:target::before {
     }
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@keyframes corouselAnimation {
+    0% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.6;
+    }
+    40% {
+        opacity: 0.7;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
