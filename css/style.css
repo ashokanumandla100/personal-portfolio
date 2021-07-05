@@ -264,6 +264,77 @@ section:target::before {
           transform: scale(1.05);
 }
 
+.projs-content .project-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90vw;
+  height: 300px;
+}
+
+.projs-content .project-wrapper .proj-details-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.projs-content .project-wrapper .proj-details-container .proj-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.projs-content .project-wrapper .proj-details-container .proj-item-container .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+}
+
+.projs-content .project-wrapper .proj-details-container .proj-item-container .value {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.projs-content .project-wrapper .image-container {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projs-content .project-wrapper .image-container img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: covers;
+     object-fit: covers;
+}
+
 .skills-content {
   display: -ms-grid;
   display: grid;
