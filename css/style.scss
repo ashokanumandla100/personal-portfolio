@@ -115,6 +115,10 @@ header {
     }
 }
 
+main {
+    margin: 0 10px;
+}
+
 
 .main-nav-wrapper {
     width: 100%;
@@ -140,10 +144,16 @@ header {
 
         a.active{
             background-color: rgba(0,0,0,0.3);
+            border-radius: 5px;
             color: white;
         }
     }
 }
+
+section{
+    margin-bottom: 40px;
+}
+
 .all-section-wrapper{
     width: 100%;
     padding: 5px 10px;
@@ -167,8 +177,8 @@ header {
 section:target::before {
     content: '';
     display: block;
-    height: 120px;
-    margin-top: -120px;
+    height: 140px;
+    margin-top: -140px;
 }
 
 .skills-content {
@@ -471,6 +481,146 @@ section:target::before {
 
 }
 
+
+// about page
+.about-container {
+    width: 80vw;
+    height: 80vh;
+    margin: 10px auto;
+    background-image: url(../images/about_background.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    min-width: 1200px;
+
+    .about-wrapper{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        padding: 10px;
+
+        .about-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 60%;
+
+            .about-image-wrapper {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 1px solid black;
+                padding: 2px;
+            }
+
+            .about-item-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-items: start;
+
+                .about-item {
+                    display: flex;
+                    gap: 15px;
+                    width: 100%;
+                    padding: 5px;
+    
+                    .label {
+                        width: 50%;
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .value {
+                        width: 50%;
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+}
+
+// contact page
+.contact-container {
+    width: 80vw;
+    height: 80vh;
+    margin: 10px auto;
+    background-image: url(../images/about_background.jpg);
+    background-size: cover;
+    border-radius: 5px;
+    min-width: 1200px;
+
+    .contact-wrapper{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        padding: 10px;
+
+        .contact-left {
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+            gap: 20px;
+            width: 60%;
+
+            .contact-heading-wrapper {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contact-item-wrapper {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-items: start;
+
+                .contact-item {
+                    display: flex;
+                    gap: 15px;
+                    width: 100%;
+                    padding: 5px;
+    
+                    .label {
+                        width: 50%;
+                        font-weight: bold;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .value {
+                        width: 50%;
+                        display: flex;
+                        justify-content: flex-start;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+}
 
 @keyframes pendulam {
     0% {

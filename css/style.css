@@ -150,6 +150,10 @@ header {
   color: var(--clr-navbar-secondary);
 }
 
+main {
+  margin: 0 10px;
+}
+
 .main-nav-wrapper {
   width: 100%;
   height: 50px;
@@ -181,7 +185,12 @@ header {
 
 .main-nav-wrapper nav a.active {
   background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   color: white;
+}
+
+section {
+  margin-bottom: 40px;
 }
 
 .all-section-wrapper {
@@ -205,8 +214,8 @@ header {
 section:target::before {
   content: '';
   display: block;
-  height: 120px;
-  margin-top: -120px;
+  height: 140px;
+  margin-top: -140px;
 }
 
 .skills-content {
@@ -588,6 +597,191 @@ section:target::before {
 
 .cert-content .next-container {
   right: 25px;
+}
+
+.about-container {
+  width: 80vw;
+  height: 80vh;
+  margin: 10px auto;
+  background-image: url(../images/about_background.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  min-width: 1200px;
+}
+
+.about-container .about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.about-container .about-wrapper .about-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.about-container .about-wrapper .about-left .about-image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-container .about-wrapper .about-left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.about-container .about-wrapper .about-left .about-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  justify-items: start;
+}
+
+.about-container .about-wrapper .about-left .about-item-wrapper .about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 5px;
+}
+
+.about-container .about-wrapper .about-left .about-item-wrapper .about-item .label {
+  width: 50%;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about-container .about-wrapper .about-left .about-item-wrapper .about-item .value {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact-container {
+  width: 80vw;
+  height: 80vh;
+  margin: 10px auto;
+  background-image: url(../images/about_background.jpg);
+  background-size: cover;
+  border-radius: 5px;
+  min-width: 1200px;
+}
+
+.contact-container .contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-container .contact-wrapper .contact-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  gap: 20px;
+  width: 60%;
+}
+
+.contact-container .contact-wrapper .contact-left .contact-heading-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-container .contact-wrapper .contact-left .contact-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  justify-items: start;
+}
+
+.contact-container .contact-wrapper .contact-left .contact-item-wrapper .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 5px;
+}
+
+.contact-container .contact-wrapper .contact-left .contact-item-wrapper .contact-item .label {
+  width: 50%;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contact-container .contact-wrapper .contact-left .contact-item-wrapper .contact-item .value {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 @-webkit-keyframes pendulam {
