@@ -70,20 +70,20 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
 
     .logo {
         width: 60px;
         height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background:var(--clr-navbar-secondary);
-        font-weight: bold;
-        font-size: 1.5rem;
-        opacity: 0.95; 
-        text-shadow: -2px -2px 1px rgba(25, 25, 26, 0.5);
+        // border-radius: 50%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // background:var(--clr-navbar-secondary);
+        // font-weight: bold;
+        // font-size: 1.5rem;
+        // opacity: 0.95; 
+        // text-shadow: -2px -2px 1px rgba(25, 25, 26, 0.5);
     
         &:hover, &:focus {
             cursor: pointer;
@@ -92,12 +92,12 @@ blockquote {
         }
     }
 
-    .brand-name {
-        font-family: Raleway, sans-serif;
-        color: var(--clr-navbar-primary);
-        font-weight: 600;
-        text-shadow: -2px -2px 1px rgba(25, 25, 26, 0.5);
-    }
+    // .brand-name {
+    //     font-family: Raleway, sans-serif;
+    //     color: var(--clr-navbar-primary);
+    //     font-weight: 600;
+    //     text-shadow: -2px -2px 1px rgba(25, 25, 26, 0.5);
+    // }
 }
 
 .navigation-wrapper {
