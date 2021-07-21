@@ -228,10 +228,10 @@ section {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.scroll-to-top {
+.scroll-to-top.show {
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: -10px;
   z-index: 999;
   cursor: pointer;
 }

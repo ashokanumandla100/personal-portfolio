@@ -1,6 +1,6 @@
 const navLinks = document.querySelectorAll('nav ul li a');
 const mainNavLinks = document.querySelectorAll('.main-nav-wrapper nav a');
-const topItem = document.querySelector('.scroll-to-top a');
+const topItem = document.querySelector('.scroll-to-top');
 const exp = document.querySelector('.exp');
 const corouselPrevBtn = document.querySelector('#corouselPrev');
 const corouselNextBtn = document.querySelector('#corouselNext');
@@ -124,5 +124,14 @@ corouselPrevBtn.addEventListener('click', event => {
         activeElement.classList.remove('active');
         prevElement.classList.add('active');
         enableDisableCorousalButtons();
+    }
+});
+
+window.addEventListener("scroll", function(){
+    let y = window.scrollY;
+    if (y > 200) {
+        topItem.classList.add('show');
+    } else {
+        topItem.classList.remove('show');
     }
 });
