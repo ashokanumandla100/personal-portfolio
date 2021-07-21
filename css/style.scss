@@ -490,7 +490,8 @@ section:target::before {
     
     .slide.active {
         display: block;
-        animation: 1s corouselAnimation ease-in-out;
+        transition: all 1s ease-in;
+        // animation: 1s corouselAnimation ease-in-out;
     }
 
     .cert-item {

@@ -621,8 +621,8 @@ section:target::before {
 
 .cert-content .slide.active {
   display: block;
-  -webkit-animation: 1s corouselAnimation ease-in-out;
-          animation: 1s corouselAnimation ease-in-out;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .cert-content .cert-item {
